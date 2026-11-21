@@ -50,6 +50,7 @@ short KEY_L = 0;
 bool running = true; // if running is true, the game loop continues; if false, the game loop ends
 
 // Was MOVE_BALL
+//Error found: Ball does not bounce after reaching the top or bottom of the window.
 void MoveBall() {
     __asm {
         ; Mover la pelota horizontalmente
