@@ -141,10 +141,12 @@ void MoveBall() {
             jmp  NEG_VELOCITY_X
 
             NEG_VELOCITY_Y :
-            jmp  EXIT_MOVE_BALL; instead of RET
+                neg  BALL_VELOCITY_Y
+                jmp  EXIT_MOVE_BALL; instead of RET
 
             NEG_VELOCITY_X :
         neg  BALL_VELOCITY_X
+            
 
             EXIT_MOVE_BALL : ; the single exit point
             nop
