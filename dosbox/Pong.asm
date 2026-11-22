@@ -435,6 +435,7 @@ CODE SEGMENT PARA 'CODE'
 		
 		XOR AX,AX
 		MOV AL,PLAYER_ONE_POINTS		; Dado, por ejemplo que el jugador 1 tiene 2 puntos, entonces AL,2
+		ADD AL,30h
 		MOV [TEXT_PLAYER_ONE_POINTS],AL
 		
 		RET
